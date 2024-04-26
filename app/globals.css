@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --primaryColor: #e52b50;
+
+    --largeFontSize: 2rem;
+    --mediumFontSize: 1.3rem;
+    --smallFontSize: .7rem;
+}
+
+*,
+*::before,
+*::after {
+    /* border: 1px solid red !important; */
+}
+
+
+html {
+    color: #000;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    background-color: var(--secondaryColor);
+    border-radius: .2rem;
+    border: 1px solid #ddd;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #fff;
+    outline: none;
+}
+
+.mainButton {
+    background-color: var(--primaryColor);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 1rem 2rem;
+    transition: filter 400ms;
+}
+
+
+section {
+    padding: 2rem 1rem;
+}

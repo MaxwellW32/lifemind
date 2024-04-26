@@ -1,0 +1,21 @@
+.form {
+    display: grid;
+    overflow-y: auto;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.form label {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.form input::placeholder {
+    text-transform: capitalize;
+}
+
+.inputCont {
+    display: grid;
+    gap: .5rem;
+    position: relative;
+}
