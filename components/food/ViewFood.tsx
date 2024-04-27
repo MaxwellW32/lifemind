@@ -14,6 +14,7 @@ export default function ViewFood({ foodObj, showFullScreen = false }: { foodObj:
     return (
         <div className={styles.foodCont} style={{ margin: showFullScreen ? "0 auto" : "" }}>
             <Image alt={`image form ${foodObj.name}`} src={foodObj.image} width={300} height={300} style={{ objectFit: "cover", width: "min(300px, 80%)", aspectRatio: "1/1" }} />
+
             <p>name: {foodObj.name}</p>
 
             {showFullScreen && (

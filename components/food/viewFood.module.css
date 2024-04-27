@@ -11,4 +11,6 @@
     grid-auto-flow: column;
     grid-auto-columns: auto;
     overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
 }
