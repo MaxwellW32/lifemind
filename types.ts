@@ -26,7 +26,6 @@ export const relatedNamesSchema = z.object({
     id: z.number(),
     name: z.string().min(1),
 })
-
 export type relatedName = z.infer<typeof relatedNamesSchema> & {
     foodsToRelatedNames?: foodsToRelatedNames[],
 }
@@ -41,7 +40,9 @@ export const vitaminsSchema = z.object({
     id: z.number(),
     name: z.string().min(1),
 })
+export const newVitaminSchema = vitaminsSchema.omit({ id: true })
 
+export type newVitamin = z.infer<typeof newVitaminSchema>
 export type vitamin = z.infer<typeof vitaminsSchema> & {
     foodsToVitamins?: foodsToVitamins[]
 }
@@ -57,7 +58,9 @@ export const mineralsSchema = z.object({
     id: z.number(),
     name: z.string().min(1),
 })
+export const newMineralSchema = mineralsSchema.omit({ id: true })
 
+export type newMineral = z.infer<typeof newMineralSchema>
 export type mineral = z.infer<typeof mineralsSchema> & {
     foodsToMinerals?: foodsToMinerals[],
 }

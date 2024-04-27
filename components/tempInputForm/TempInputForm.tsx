@@ -77,7 +77,7 @@ export default function TempInputForm<T extends initialFormType>({ initialForm, 
 
         } catch (error) {
             toast.error("Couldn't send")
-            console.log(`$something else happened`, error);
+            console.log(`$Couldn't send`, error);
         }
     }
 
@@ -126,7 +126,7 @@ export default function TempInputForm<T extends initialFormType>({ initialForm, 
                 )
             })}
 
-            <button>Submit</button>
+            <button className='mainButton'>Submit</button>
         </form>
     )
 }

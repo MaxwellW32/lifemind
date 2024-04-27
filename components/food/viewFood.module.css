@@ -1,0 +1,14 @@
+.foodCont {
+    display: grid;
+    justify-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.infoOverFlowCont {
+    display: grid;
+    gap: .5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    overflow-x: auto;
+}
